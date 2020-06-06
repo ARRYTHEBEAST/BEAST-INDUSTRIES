@@ -1,0 +1,58 @@
+print("Welcome to my very first python game!!")
+name = input("What is your name? : ")
+gender = input("What is your gender")
+age = int(input("What is Your age? : "))
+print("Hello", name , "your age is ", age)
+health = 10
+if age >= 18:
+  start = input("Ready to start the game? : ")
+
+  star = start=="yes" 
+  print()
+
+  if star == True:
+    print("Okay then! let's begin")
+    if gender == "male":
+      print("You are a wizard")
+    else:
+      print("You are a witch")
+
+    print("The Dark Lord has risen back. The prophecy \n says that you have to kill The Dark Lord ")
+    print("you have 10 health")
+    if health > 0:
+      c1 = input("you have to go a forest. Go in silently or loudly ")
+      if c1 == "silently":
+        print("You sneakly went in the forest but was bit by a snake which took 1 health off you")
+        health -= 1
+        print()
+        print("you have", health, "health remaining")
+      else:
+        print("you went loudly and you see a big basilisk it is 10 foot long.")
+        print()
+        spell1 = input("Use avada kedavera spell or use Stupefy spell")
+        if spell1 == "aveda kedavera":
+          print("you killed the basilisk succesfully using the death spell")
+        else:
+          print("you used the wrong spell and was killed by the baslisk")
+          print()
+          print("Game Over!!")
+  else:
+    print("you have to answer yes")
+else:
+  print("you are underage and not allowed to play this game")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
